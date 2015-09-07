@@ -145,9 +145,10 @@ exsys_cc_fnc_wreckCheck =	{
 						} foreach _nearPlayers;
 						diag_log format["_actualPlayer %1",_actualPlayer];
 						exsys_safeToClean = false;
+						//todo: move this to a message that only local players see it, not all
 						_msgStart3 = format["   The %1 has been rigged with explosives - CLEAR THE AREA",missionId];
 						_msgStart3 call exsys_cc_BroadcastMissionStatus;
-						sleep (((round(random 1)) + 1) * 60);			
+						sleep (((round(random 5)) + 1) * 60);		
 						[] call exsys_cc_fnc_wreckCleanup;
 						
 						
@@ -181,13 +182,13 @@ exsys_cc_fnc_wreckCleanup = {
 						_msgStart3 = format["  The %1 has been cleared out",missionId];
 						_msgStart3 call exsys_cc_BroadcastMissionStatus;
 						diag_log "================== Crash Cleaning ended";
-						sleep (((round(random 1)) + 1) * 60);
+						sleep (((round(random 10)) + 10) * 60);
 						exsys_safeToClean = true;
 						exsys_heliCrashSpawned = false;	
 						diag_log "================== Cool Down Time Over For Another Crash";
 
 };
-sleep (1 * 60);
+sleep (10 * 60);
 [] call exsys_cc_fnc_badPilot;
 while {true} do {	
 	if((time - exsys_cc_wreckRespawnTime) > (30 * 60)) then { //DEBUGTIMER
