@@ -5,6 +5,7 @@ Developed for Exile mod, but is easily adaptable to any mod/mode. You would just
 
 Also, its a servermod, so clients are  not required to download
 
+Note, sleep timers are real short as for debugging... so yeah there's that
 ##Install:
 Literally, pack the folder into a pbo, and drop it in a server addon or add one for it. 
 
