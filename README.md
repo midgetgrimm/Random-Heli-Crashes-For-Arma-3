@@ -1,7 +1,7 @@
 ## Random-Heli-Crashes-For-Arma-3(ExileMod)
 ### by [midgetgrimm]
 ##### thanks to eraser1 for global messaging from his DMS
-Developed for Exile mod, but is easily adaptable to any mod/mode. You would just have to update the item/weapon config in the fn_configuration.sqf
+Developed for Exile mod, but is easily adaptable to any mod/mode. You would just have to update the item/weapon config in the fn_configuration.sqf and change the messaging system lol xD
 
 Also, its a servermod, so clients are  not required to download
 
